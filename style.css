@@ -34,7 +34,7 @@ main {
 .card {
   width: 250px;
   height: 180px;
-  background-image: url("covers/1.png");
+  background-image: url("1.png");
   background-size: cover;
   background-position: center;
   border-radius: 12px;
