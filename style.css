@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  text-decoration: none;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column; 
+  height: 100vh;
+}
+
+header {
+  background-color: #318ba2;
+  padding: 20px;
+  color: #ffffff;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 250px;
+  height: 180px;
+  background-image: url("covers/1.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+  background-color: #318ba2;
+  width: 100%;
+  padding: 8px;
+  border-radius: 12px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.8;
+  display: block;
+  text-decoration: none;
+}
+
+.card a:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  color: #318ba2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
