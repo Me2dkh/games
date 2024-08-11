@@ -14,12 +14,18 @@ body {
   display: flex;
   flex-direction: column; 
   height: 100vh;
+  font-size: 14px;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #318ba2;
   padding: 20px;
   color: #ffffff;
+  z-index: 1000;
 }
 
 main {
@@ -28,36 +34,43 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 128px 20px;
 }
 
 .card {
+  position: relative;
   width: 250px;
-  height: 180px;
-  background-image: url("1.png");
+  height: 200px;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
   display: flex;
-  align-items: flex-end;
-  padding: 20px;
+  overflow: hidden;
+  margin: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.card a {
-  background-color: #318ba2;
+.card img {
   width: 100%;
+}
+
+.card a {
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0 0 0 / 0.1);
+  width: 90%;
   padding: 8px;
   border-radius: 12px;
-  color: #ffffff;
+  color: #318ba2;
   text-align: center;
-  opacity: 0.8;
   display: block;
   text-decoration: none;
+  margin: 8px;
+  bottom: 0;
 }
 
 .card a:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 footer {
